@@ -1,0 +1,37 @@
+$blue-light: #1797d4;
+$blue-dark: #172d55;
+
+/* Buttons */
+
+button.btn {
+	border: 0;
+	cursor: pointer;
+}
+
+.btn {
+	padding: 5px 12px;
+	text-shadow: rgba(0,0,0,0.25);
+	display: inline-block;
+
+	transition: all .15s;
+}
+
+.btn-primary {
+	background: $blue-light;
+	color: #fff;
+	font-size: 16px;
+
+	&:hover {
+		background: $blue-dark;
+		color: #fff;
+	}
+}
+
+.btn-lg {
+	font-size: 20px;
+	padding: 10px 20px;
+}
+
+.btn-submit {
+	float: right;
+}

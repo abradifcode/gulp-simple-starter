@@ -1,0 +1,80 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	font: 14px Helvetica, Arial, sans-serif;
+	color: #333;
+}
+
+/* Selection */
+
+::-moz-selection { background: #FFFACD; color: #333; }
+::selection { background: #FFFACD; color: #333; }
+
+/* Links */
+
+a {
+	text-decoration: underline;
+	color: #333;
+
+	transition: all .15s;
+
+	&:hover {
+		color: rgba(0, 0, 0, 0.8);
+	}
+}
+
+/* Lists */
+
+ul {
+
+}
+
+nav {
+	ul {
+		padding: 0;
+		margin: 15px 0;
+		list-style: none;
+
+		li {
+			display: inline-block;
+			margin: 5px;
+		}
+
+		a {
+			padding: 15px;
+		}
+	}
+}
+
+/* Wrapper */
+
+.wrapper {
+	max-width: 650px;
+	margin: 0 auto;
+}
+
+/* YouTube iframes */
+
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+@import 'buttons';
+@import 'helpers';
